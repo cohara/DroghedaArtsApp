@@ -12,6 +12,29 @@
 <script src="js/jquery.js"></script>
 
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+var map;
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.7151287,-6.3524941)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.7151287,-6.3524941),
+      map: map,
+      title: 'St Peters Roman Catholic Church'
+  });
+
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
 
 </head>
 
@@ -81,6 +104,7 @@
 	
 	<br>
 	
+	<div id="map-canvas"></div>
 	
 	</div>
 </div>
