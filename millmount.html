@@ -23,6 +23,13 @@ function initialize() {
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.7117733,-6.3502812),
+      map: map,
+      title: 'Millmount Tower & Museum'
+  });
+
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
