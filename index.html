@@ -19,11 +19,15 @@
 
 <div data-role="page">
 	
-	<div data-role="header" style="background-color:#3300FF " >
+
 	
-	<h2> <p> <img src="DroghedaArtsLogo.jpg" width="375px" height="89px"/> </p> </h2>
-	
-	</div>
+	<!-- The page header -->
+      <div data-role="header" class="ui-header ui-bar-a" role="banner" data-position:"fixed">
+         <div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.jpg">
+         </div>
+      </div>
+      <!-- Header end -->
 	
 	<div data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" role="banner">
 	
@@ -41,10 +45,13 @@
 
 <ul data-role="listview" data-inset="true">
     
-    <li><a href="events.html">Events</a></li>
-    <li><a href="tour.html">Virtual Tour of Drogheda</a></li>
-    <li><a href="contact.html">CONTACT</a></li>
-	<li><a href="attractions.html">Tourist Attractions</a></li>
+    <li><a href="events.html"> <img src="icons/events.png"/> Events</a></li>
+
+    <li><a href="tour.html"> <img src="icons/drogheda.png"/> Virtual Tour of Drogheda</a></li>
+
+    <li><a href="contact.html"> <img src="icons/contact.png"/> CONTACT</a></li>
+
+	<li><a href="attractions.html"> <img src="icons/attractions.png"/> Tourist Attractions</a></li>
 
 </ul>
 
@@ -52,11 +59,14 @@
 
 
 	</div>
-	<div data-role="footer">
-<h3> Follow us on Facebook <a href="https://www.facebook.com/DroghedaArtsFestival"><img src="facebook-icon.png" height="64" width="64"></a> </h3> 
-
- <h3> Follow us on Twitter <a href="https://twitter.com/drogartsfest"><img src="twitter-icon.png" height="64" width="64"></a> </h3> 
-	</div>
+	
+	<!-- Footer -->
+      <div data-role="footer" data-theme="a" data-position="fixed">
+         <span>Drogheda Arts Festival 2014 ... 2-5 May 2014</span>
+         <span style="float:right;font-size:smaller;"><a href="https://twitter.com/drogartsfest"><img src="twitter-icon.png" style="height:36px"></a>
+		 <a href="https://www.facebook.com/DroghedaArtsFestival"><img src="facebook-icon.png" style="height:36px"></a></span>
+      </div>
+      <!-- Footer end -->
 </div>
 
 
