@@ -214,3 +214,8 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 /nbproject/private/
+/platforms/ios/www/nbproject/private/
+/www/nbproject/private
+/www_nb_temp/nbproject/private/
+/www_nb_temp/www/nbproject/private/
+/platforms/ios/www/platforms/ios/www/nbproject/private/
