@@ -19,23 +19,25 @@
 
 </head>
 
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
 <body>
 
 <div data-role="page">
 
-<!-- The page header -->
-      <div data-role="header" class="ui-header ui-bar-a" role="banner" data-position:"fixed">
-         <div class="bannerbox" style="background-color:#3f8de0; height:109px">
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
             <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.jpg">
          </div>
-      </div>
-      <!-- Header end -->
-	
-	<div data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" role="banner">
-	
-         <h1 class="ui-title">Games</h1>
 		 
-         <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a>
+         <h1 class="ui-title">Games</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
 		 
       </div>
 	
@@ -67,14 +69,10 @@
  <p> <h4> <img src="games/SpaceBackground.jpg" width="350.8px" height="248px" /> </h4> </p>
  
 	</div>
-	
-	<!-- Footer -->
-      <div data-role="footer" data-theme="a" data-position="fixed">
-         <span>Drogheda Arts Festival 2014 ... 2-5 May 2014</span>
-         <span style="float:right;font-size:smaller;"><a href="https://twitter.com/drogartsfest"><img src="twitter-icon.png" style="height:36px"></a>
-		 <a href="https://www.facebook.com/DroghedaArtsFestival"><img src="facebook-icon.png" style="height:36px"></a></span>
-      </div>
-      <!-- Footer end -->
+	  
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
 	
 </div>
 

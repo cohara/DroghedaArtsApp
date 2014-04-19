@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.7160794,-6.3566513)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.7160794,-6.3566513),
+      map: map,
+      title: 'Barlow House'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">The Independents</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> Exhibition: The Independents </h3> </p>
+	
+	<p> <h2> <img src="ArtsImages/ArtsImages_Page_05_Image_0001.jpg"/> </h2> </p>
+	
+	<p>
+
+A photographic exhibition by Shane Cowley, draws on memories and dramas of Narrow West Street,
+revealing the vibrant humanity of a once bustling shopping district of Drogheda . 
+These photographs provided the inspiration behind The Street, the Upstate Theatre Project's dramatic
+enactment of the stories behind them at 6:30 & 8:30, each night Thurs 1 - Mon 5 May, on Narrow West Street.
+	</p>
+	<br>
+			
+	
+	<p> Wednesday 30 April - Monday 5 May </p>
+	
+	<p> Venue: Barlow House, Narrow West Street </p>
+	
+	<p>Times: 10:00am - 5:00pm Wed 30 April - Fri 2 May</p>
+	<p>        2:00pm - 6:00pm Sat 3 - Mon 5 May</p>
+	
+	<p> Tickets: Free</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

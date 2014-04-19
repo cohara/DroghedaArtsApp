@@ -14,25 +14,47 @@
 
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
 
+ <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.714344,-6.353207)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.714344,-6.353207),
+      map: map,
+      title: 'Droichead Arts Centre'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 
 <body>
 
 <div data-role="page">
 
-<!-- The page header -->
-      <div data-role="header" class="ui-header ui-bar-a" role="banner" data-position:"fixed">
-         <div class="bannerbox" style="background-color:#3f8de0; height:109px">
-            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.jpg">
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
          </div>
-      </div>
-      <!-- Header end -->
-	
-	<div data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" role="banner">
-	
-         <h1 class="ui-title">CONTACT</h1>
 		 
-         <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a>
+         <h1 class="ui-title">Contact</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
 		 
       </div>
 	
@@ -43,30 +65,44 @@
 
 
 <ul data-role="listview" data-inset="true">
-    <li><a href="index.html">Back</a></li>
+<li><a href="index.html">Back</a></li>
 
 </ul>
 
 
 
 
-	</div>
-	<div data-role="footer">
-<h3> Phone numbers, email addresses etc. are yet to be confirmed! </h3>
-<h3> <img src="PageUnderConstruction.jpg" width="300px" height="300px" /> </h3>
+	
+<p>  Drogheda Arts Festival Box Office is situated at Droichead Arts Centre, Stockwell Street, Drogheda, Co Louth. </p>
+
+<p> 
+Tickets may be purchased over the internet up to 2pm on the day of the performance. Your tickets will be available for 
+collection from the performance venue on the night of the performance. Please arrive at the box office no later the 30 minutes 
+before the performance start time to collect your ticket (Except Beaulieu Sounds Beautiful).
+</p>
+
+<p> <b> Box Office Number: </b> </p>
+
+<p> +353 (0)41 9833946 <p>
+
+<p> <b> Online booking: </b> <a href= "www.droghedaartsfestival.ie">www.droghedaartsfestival.ie</a>
+
+<br>
+
+
+<div id="map-canvas"></div>
 
 	</div>
-	
-	<!-- Footer -->
-      <div data-role="footer" data-theme="a" data-position="fixed">
-         <span>Drogheda Arts Festival 2014 ... 2-5 May 2014</span>
-         <span style="float:right;font-size:smaller;"><a href="https://twitter.com/drogartsfest"><img src="twitter-icon.png" style="height:36px"></a>
-		 <a href="https://www.facebook.com/DroghedaArtsFestival"><img src="facebook-icon.png" style="height:36px"></a></span>
-      </div>
-      <!-- Footer end -->
+	  
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
 	
 </div>
 
+</div>
+	<div data-role="footer">
+</div>
 
 </body>
 </html>

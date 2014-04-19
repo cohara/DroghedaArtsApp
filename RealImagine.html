@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.714344,-6.353207)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.714344,-6.353207),
+      map: map,
+      title: 'Droichead Arts Centre'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Real and Imaginative Worlds</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> Exhibition: Real and Imaginative Worlds </h3> </p>
+	
+	<p> <h2> <img src="ArtsImages/ArtsImages_Page_06_Image_0002.jpg"/> </h2> </p>
+	
+	<p>
+Gaming is the act of playing games. A person
+who plays games is called a Gamer. It generally
+refers to video game culture, an increasingly
+expressive medium within modern society.
+This group show features diverse art practices
+influenced by the theme Real and Imaginative
+Worlds and inspired by the multi-faceted nature
+of playing games.
+	</p>
+	<br>
+	<p>
+The exhibition will feature interactive works by
+three artists:	
+	</p>
+	<br>
+	<p>
+Vivienne Byrne
+A multimedia artist whose practice is explores
+the space between human relationships and
+technological communications. Her installations
+employ elements of drawing, sculpture, video,
+projections and various materials gathered from
+workshops.
+	</p>
+	<br>
+	<p>
+Hilary O'Shaughnessy
+An artist whose work sits at the intersection of
+technology, performance and game design.
+Her interest lies in interaction led design
+that uses the body as a tool for design. Her
+work often questions our relationship with
+technology and definitions of public versus
+private space.
+	</p>
+	<br>
+	<p>
+Jonathan Sammon
+A visual artist and film maker who uses drawing,
+sound and moving images to create narratives
+which draw upon his interests in literature and
+film.
+	</p>
+		
+	<br>
+	
+	<p> Friday 2 May - Monday 5 May </p>
+	
+	<p> Venue: Droichead Arts Centre, Stockwell Street </p>
+	
+	<p> Opening: 12:00pm Fri 2 May  </p>
+	<p> Times: 10:00am - 5:00pm Sat 3 & Sun 4 May</p>
+	<p>        10:00am - 5:00pm Mon 5 May</p>
+	<p>After the Arts Festival the exhibition runs until June</p>
+	
+	<p> Tickets: Free</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

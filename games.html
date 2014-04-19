@@ -16,28 +16,29 @@
 <script src="js/jquery.js"></script>
 
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
-
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 
 <body>
 
 <div data-role="page">
 
-<!-- The page header -->
-      <div data-role="header" class="ui-header ui-bar-a" role="banner" data-position:"fixed">
-         <div class="bannerbox" style="background-color:#3f8de0; height:109px">
-            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.jpg">
-         </div>
-      </div>
       <!-- Header end -->
 	
-	<div data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" role="banner">
-	
-         <h1 class="ui-title">Games</h1>
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
 		 
-         <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a>
+         <h1 class="ui-title">Game On!</h1>
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
 		 
+		 <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a>
+		  
+         
       </div>
+
+	  
 	
 	<div role="main" class="ui-content">
 	
@@ -46,35 +47,102 @@
 
 
 <ul data-role="listview" data-inset="true">
-    <li><a href="index.html">Back</a></li>
+<li><a href="index.html">Back</a></li>
 
 
 </ul>
 
+<ul data-role="listview" data-inset="true">
+    <li><a href="GameOnEvents.html">
+        
+    <h2>Game On Events</h2>
+    <p></p></a>
+    </li>
+
+	<li><a href="GameOnGames.html">
+		
+    <h2>Game On Games</h2>
+    <p></p></a>
+    </li>
+
+</ul>
+
+
+	
+<p> <h1> Droichead Arts Centre and CoderDojo present </h1> </p>
+
+<p> <h3> GAME ON </h3>
+
+<p> <img src="games/GamePlanet.png" height="248px" width="248px" /> <img src="games/SpaceInvader.jpg" height="248px" width="248px" />  </p>
+<p> </p>
+
+<p> 
+GAME ON is a two-day event merging traditional artforms with digital technologies. In the forty years since 
+the introduction of the first home video game, this field has attracted exceptional artistic talent. A blend of 
+traditional art forms like painting, writing, sculpture, music, storytelling and cinematography, video games 
+offer artists a previously unprecedented method of communicating with and engaging audiences.
+</p>
+
+<p>
+There are a wide array of projects made by the young developers of CoderDojo Drogheda,
+such as Games, Websites, Apps & More.
+</p>
+
+<p>
+To find out more about the amazing <b>Games</b>, Click on the Game On Games button above!
+</p>
+
+<p>
+Don't forget to check out the <b>Game On Drogheda website</b> made by Ellen Pender & Marc Kiely!
+<a href= "http://www.gameondrogheda.com/">http://www.gameondrogheda.com/</a>
+</p>
+
+<p> 
+Also, this <b>Drogheda Arts Festival App</b> was developed by Conor O'Hara from CoderDojo Drogheda,
+with help from CoderDojo Drogheda mentors Graham, Mark, Brendan & others 
+and creative guidance from Vivienne of the Droichead Arts Centre.
+</p>
 
 
 
-	</div>
-	<div data-role="footer">
-<h3> Page under construction! </h3> 
+<br>
 
- <p> <h3> <img src="PageUnderConstruction.jpg" width="300px" height="300px" /> </h3> </p> 
- 
- <p> <h4> <img src="games/SpaceInvader.jpg" width="248px" height="248px" /> </h4> </p>
- 
- <p> <h4> <img src="games/GamePlanet.png" width="192px" height="192px" /> </h4> </p>
- 
- <p> <h4> <img src="games/SpaceBackground.jpg" width="350.8px" height="248px" /> </h4> </p>
+<p>
+This event is the outcome of an Artist in Residence programme with CoderDojo, Drogheda since September 
+2013. Artist Vivienne Byrne and a team of artists and programming mentors have worked with young coders 
+to respond to the theme ‘Real and Imaginative Worlds’. They combined both technical and creative expertise 
+to develop original games, stories, sculptures, animations and music compositions inspired by our heritage 
+town.
+</p>
+
+<br>
+
+<p>
+This project was developed through a partnership between Droichead Arts Centre and CoderDojo , Drogheda 
+with kind support from CREATE under the Artist in the Community Scheme. We are also grateful for the 
+generous support from Mcor, DKIT.
+</p>
  
 	</div>
 	
+	<div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+	</div>
+	<div data-role="footer">
+	
+	
+	
 	<!-- Footer -->
       <div data-role="footer" data-theme="a" data-position="fixed">
-         <span>Drogheda Arts Festival 2014 ... 2-5 May 2014</span>
+         <span>Drogheda Arts Festival 2014 ... 29 April - 5 May 2014</span>
          <span style="float:right;font-size:smaller;"><a href="https://twitter.com/drogartsfest"><img src="twitter-icon.png" style="height:36px"></a>
 		 <a href="https://www.facebook.com/DroghedaArtsFestival"><img src="facebook-icon.png" style="height:36px"></a></span>
       </div>
       <!-- Footer end -->
+	  
+	     
 	
 </div>
 

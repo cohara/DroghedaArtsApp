@@ -13,9 +13,9 @@
 
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
 	
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	
     <script>
-var map;
+
 function initialize() {
   var mapOptions = {
     zoom: 17,
@@ -27,37 +27,34 @@ function initialize() {
 	    var marker = new google.maps.Marker({
       position:  new google.maps.LatLng(53.7160794,-6.3566513),
       map: map,
-      title: 'The Tholsel'
+      title: 'Barlow House'
   });
 
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+$(document).on("pageinit", function(event) { initialize(); });
 
     </script>
 
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 
 <body>
 
 <div data-role="page">
-	<div data-role="header">
+
+<!-- Header end -->
 	
-	<!-- The page header -->
-      <div data-role="header" class="ui-header ui-bar-a" role="banner" data-position:"fixed">
-         <div class="bannerbox" style="background-color:#3f8de0; height:109px">
-            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.jpg">
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
          </div>
-      </div>
-      <!-- Header end -->
-	
-	</div>
-	
-	<div data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" role="banner">
-	
-         <h1 class="ui-title">Barlow House</h1>
 		 
-         <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a>
+         <h1 class="ui-title">Barlow House</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
 		 
       </div>
 	
@@ -68,15 +65,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 <ul data-role="listview" data-inset="true">
-    <li><a href="attractions.html">Back</a></li>
+<li><a href="attractions.html">Back</a></li>
 
 </ul>
 
 
 
 
-	</div>
-	<div data-role="footer">
 
 	<p> <h2> <img src="Photo09.jpg" width="222.4px" height="272.2px" /> </h2> </p>
 	
@@ -84,28 +79,25 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	
 	<p>
 	
-	<h2> Barlow House </h2>
+	<h1> Barlow House </h1>
 	
 	</p>
 	
 	<br>
 	
 	<p>
-	Barlow House on Narrow West Street is a magnificent Georgian building and a prominent land-mark in 
-	Drogheda, dating back to 1734. It has a fine pedimented Gibbsian doorcase with the central window 
-	above decorated with a segmental pediment. The building has been attributed to both Richard Cassels 
-	and Francis Bindon.
+	Barlow House on Narrow West Street is a magnificent Georgian building and a prominent land-mark in Drogheda, dating back to 1734. 
+	It has a fine pedimented Gibbsian doorcase with the central window above decorated with a segmental pediment. 
+	The building has been attributed to both Richard Cassels and Francis Bindon.
 	</p>
 	
 	<p>
-	In recent times Barlow House was the local garda station but is now one of two centres of the Droichead 
-	Arts Centre - the other being on Stockwell Street beside the library where the contemporary gallery, 
-	bar/cafe and theatre are located. Today, Barlow House is home to two theatre companies: Upstate 
-	Theatre Project &Calipo Theatre and Picture Company and Verba Editing & Development Perspectives 
-	NGO. At the back of the premises there are two artist studios, a print studio and a band room. Inside the 
-	rooms are bustling daily with children’s music classes, arts classes and drama classes. At night there are 
-	many other activities including rehearsals, writers meetings, life drawing sessions, photography classes, 
-	music classes and community meetings. 
+	In recent times Barlow House was the local garda station but is now one of two centres of the Droichead Arts Centre - 
+	the other being on Stockwell Street beside the library where the contemporary gallery, bar/cáfe and theatre are located. 
+	Today, Barlow House is home to two theatre companies : Upstate Theatre Project &Calipo Theatre and Picture Company and 
+	Verba Editing & Development Perspectives NGO. At the back of the premises there are two artist studios, a print studio and a band room. 
+	Inside the rooms are bustling daily with childrens music classes, arts classes and drama classes. At night there are many other activities 
+	including rehearsals, writers meetings, life drawing sessions, photography classes, music classes and community meetings. 
 	</p>
 	
 	<br>
@@ -113,8 +105,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	<div id="map-canvas"></div>
 	
 	</div>
+	
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
 </div>
 
+
+</div>
+	<div data-role="footer">
+</div>
 
 </body>
 </html>

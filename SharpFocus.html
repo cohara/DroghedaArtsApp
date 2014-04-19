@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.7151384,-6.3554122)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.7151384,-6.3554122),
+      map: map,
+      title: 'Abbey Car Park'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Sharp Focus</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> Sharp Focus: Crossing the Divide </h3> </p>
+	
+	<p> <h2> <img src="ArtsImages/ArtsImages_Page_06_Image_0001.jpg"/> </h2> </p>
+	
+	<p>
+This Drogheda premiere will showcase four
+original short films made by forty talented
+young people from Belfast, Monaghan and
+Dundalk. Under the artistic direction of Calipo
+Theatre Company, Drogheda; these films are
+a culmination of 24 months of work as part
+of a cross border project called Sharp Focus:
+Crossing the Divide, funded by the EU's PEACE
+III Programme.
+	</p>
+	<br>
+	<p>
+Sharp Focus is a film project where teenagers
+work with established filmmakers on the
+production of original short films that explore
+the legacy of conflict in Northern Ireland and
+the Southern Border Counties. The participants
+were facilitated to devise their own screenstories,
+and to star in the films that they
+created.
+	</p>
+	<br>
+	<p>
+In addition to showcasing the films, Calipo
+will also screen a half hour documentary
+looking behind the scenes at the creation and
+development of the project.
+The Sharp Focus project is produced and
+managed by Calipo in partnership with the
+Shankill Women's Centre, Belfast, and
+supported by Healing Through Remembering
+and Wave Trauma Centre, Belfast.	
+	</p>
+	<br>
+	<p> Friday 2 May </p>
+	
+	<p> Venue: Cinemobile, Abbey Car Park </p>
+	
+	<p> Times: 11:00am, 1:00pm, 7:00pm Fri 2 May</p>
+		
+	<p> Tickets: Free, booking necessary</p>
+	
+	<p> 
+	<a href="http://droghedaartsfestival.ticketsolve.com/shows/873511362/events?show_id=873511362"> <img src="icons/BookNow2.png" /> 
+	</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

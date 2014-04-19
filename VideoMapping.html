@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.7159172,-6.3470507)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.7159172,-6.3470507),
+      map: map,
+      title: 'St Laurences Gate'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Video Mapping on Laurence Gate</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+
+
+
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+
+
+
+	
+
+	<p> <h3> Video Mapping on Laurence Gate </h3> </p>
+	
+	<p>
+	Do not miss this Live Special Effects Extravaganza as Laurence Gate comes to life through sound, lighting 
+	and projections using the original artwork created by children in CoderDojo, Drogheda. It will be video 
+	mapped by artist Anthony Murphy of ShadowLab. Don't miss this epic transformation and join us where the 
+	past meets the future, combining our real and imaginative worlds.
+	</p>
+	
+	<br>
+	
+	<p> Sunday 4 May </p>
+	
+	<p> Venue: Laurences Gate </p>
+	
+	<p> Time: 9.45pm </p>
+	
+	<p> Tickets: Free, drop by </p>
+	
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

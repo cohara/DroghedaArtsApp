@@ -14,25 +14,25 @@
 
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
 
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 
 <body>
 
 <div data-role="page">
 
-<!-- The page header -->
-      <div data-role="header" class="ui-header ui-bar-a" role="banner" data-position:"fixed">
-         <div class="bannerbox" style="background-color:#3f8de0; height:109px">
-            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.jpg">
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
          </div>
-      </div>
-      <!-- Header end -->
-	
-	<div data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" role="banner">
-	
-         <h1 class="ui-title">Thursday 1st of May</h1>
 		 
-         <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a>
+         <h1 class="ui-title">Thursday 1st of May</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
 		 
       </div>
 	
@@ -43,116 +43,82 @@
 
 
 <ul data-role="listview" data-inset="true">
-    <li><a href="DayTime.html">Back</a></li>
+<li><a href="DayTime.html">Back</a></li>
 
 </ul>
 
 
 
 
-	</div>
-	<div data-role="footer">
-<h3> Events are yet to be confirmed! </h3>
+	
+
 
 <br>
 
 
 
-<table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a"> 
+<table data-role="table" id="table-custom-2"  class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a"> 
          <thead>
            <tr class="ui-bar-d">
              <th data-priority="2">Time</th>
              <th>Event</th>
              <th data-priority="3">Venue</th>
              <th data-priority="1"><abbr title="">Cost</abbr></th>
+			 <th> Category </th>
              
            </tr>
          </thead>
          <tbody>
-           <tr>
-             <th>1</th>
-             <td><a href="#" data-rel="external">Event 1</a></td>
-             <td>A</td>
-             <td>€</td>
-             
+          
+			<tr>
+             <td> 10.00am - 5.00pm  </td>
+             <td><a href="TheIndependents.html" data-rel="external">The Independents </td>
+             <td>Barlow House</td>
+			 <td>Free</td>
+			 <td>Arts, Architecture & Archaeology </td>
            </tr>
-           <tr>
-             <th>2</th>
-             <td><a href="#" data-rel="external">Event 2</a></td>
-             <td>B</td>
-             <td>€</td>
-             
+		   
+		   <tr>
+             <td> 10.30am - 5.00pm  </td>
+             <td><a href="ReFramingtheDomestic.html" data-rel="external">Re-Framing the Domestic in Irish Art </td>
+             <td>Highlanes Gallery</td>
+			 <td>Free</td>
+			 <td>Arts, Architecture & Archaeology </td>
            </tr>
-           <tr>
-             <th>3</th>
-             <td><a href="#" data-rel="external">Event 3</a></td>
-             <td>C</td>
-             <td>€</td>
-             
+		   
+		   <tr>
+             <td> 6.30pm & 8.30pm  </td>
+             <td><a href="TheStreet.html" data-rel="external">The Street </td>
+             <td>Narrow West Street</td>
+			 <td>€12/€14</td>
+			 <td>Theatre & Film </td>
            </tr>
-           <tr>
-             <th>4</th>
-             <td><a href="#" data-rel="external">Event 4</a></td>
-             <td>D</td>
-             <td>€</td>
-             
-           </tr>
-           <tr>
-             <th>5</th>
-             <td><a href="#" data-rel="external">Event 5</a></td>
-             <td>E</td>
-             <td>€</td>
-             
-           </tr>
-           <tr>
-             <th>6</th>
-             <td><a href="#" data-rel="external">Event 6</a></td>
-             <td>F</td>
-             <td>€</td>
-             
-           </tr>
-           <tr>
-             <th>7</th>
-             <td><a href="#" data-rel="external">Event 7</a></td>
-             <td>G</td>
-             <td>€</td>
-             
-           </tr>
-           <tr>
-             <th>8</th>
-             <td><a href="#" data-rel="external">Event 8</a></td>
-             <td>H</td>
-             <td>€</td>
-             
-           </tr>
-           <tr>
-             <th>9</th>
-             <td><a href="#" data-rel="external">Event 9</a></td>
-             <td>I</td>
-             <td>€</td>
-             
-           </tr>
-           <tr>
-             <th>10</th>
-             <td class="title"><a href="#" data-rel="external">Event 10</a></td>
-             <td>J</td>
-             <td>€</td>
-             
-           </tr>
+		  
          </tbody>
        </table>
 
 <br>
 
+
+
 	</div>
+	<div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	</div>
+	<div data-role="footer">
+	
+		
 	
 	<!-- Footer -->
       <div data-role="footer" data-theme="a" data-position="fixed">
-         <span>Drogheda Arts Festival 2014 ... 2-5 May 2014</span>
+         <span>Drogheda Arts Festival 2014 ... 29 April - 5 May 2014</span>
          <span style="float:right;font-size:smaller;"><a href="https://twitter.com/drogartsfest"><img src="twitter-icon.png" style="height:36px"></a>
 		 <a href="https://www.facebook.com/DroghedaArtsFestival"><img src="facebook-icon.png" style="height:36px"></a></span>
       </div>
       <!-- Footer end -->
+	
+
 	
 </div>
 

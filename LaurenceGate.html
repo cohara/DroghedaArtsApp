@@ -14,51 +14,48 @@
 
 	<script src="js/jquery.mobile-1.4.0.min.js"></script>
 	
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	
     <script>
-var map;
+
 function initialize() {
   var mapOptions = {
     zoom: 16,
-    center: new google.maps.LatLng(53.7166596,-6.344648)
+    center: new google.maps.LatLng(53.7159172,-6.3470507)
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 	  
 	    var marker = new google.maps.Marker({
-      position:  new google.maps.LatLng(53.7166596,-6.344648),
+      position:  new google.maps.LatLng(53.7159172,-6.3470507),
       map: map,
       title: 'St Laurences Gate'
   });
 
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+$(document).on("pageinit", function(event) { initialize(); });
 
     </script>
 
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 </head>
 
 <body>
 
 <div data-role="page">
-	<div data-role="header">
+
+<!-- Header end -->
 	
-	<!-- The page header -->
-      <div data-role="header" class="ui-header ui-bar-a" role="banner" data-position:"fixed">
-         <div class="bannerbox" style="background-color:#3f8de0; height:109px">
-            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.jpg">
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
          </div>
-      </div>
-      <!-- Header end -->
-	
-	</div>
-	
-	<div data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" role="banner">
-	
-         <h1 class="ui-title">St Laurence's Gate</h1>
 		 
-         <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a>
+         <h1 class="ui-title">St Laurences Gate</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
 		 
       </div>
 	
@@ -69,15 +66,14 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 <ul data-role="listview" data-inset="true">
-    <li><a href="attractions.html">Back</a></li>
+<li><a href="attractions.html">Back</a></li>
 
 </ul>
 
 
 
 
-	</div>
-	<div data-role="footer">
+	
 
 	<p> <h2> <img src="Photo02.jpg"/> </h2> </p>
 	
@@ -85,32 +81,31 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	
 	<p>
 	
-	<h2> St. Laurence's Gate </h2>
+	<h1> St. Laurence's Gate </h1>
 	
 	</p>
 	
 	<br>
 	
 	<p>
-	Built when the Anglo Normans made Drogheda one of their primary strongholds, St Laurences Gate was 
-	part of the 13th century walled fortifications which enclosed one hundred and thirteen acres, making 
-	Medieval Drogheda one of the largest walled towns of the time. 
+	Built when the Anglo Normans made Drogheda one of their primary strongholds, St Laurences Gate was part of the 13th century walled 
+	fortifications which enclosed one hundred and thirteen acres, making Medieval Drogheda one of the largest walled towns of the time. 
+	It takes its name from the ancient priory of St Laurence which stood outside the Gate. 
 	</p>
 	
 	<br>
 	
 	<p>
-	St Laurence's Gate is a barbican and is widely regarded as one of the finest of its kind in Europe. It 
-	consists of two lofty circular towers, connected together by a wall, in which there is an archway. One of 
-	the gates many features is a slot underneath the arch from which a portcullis could be raised and 
-	lowered. 
+	St Laurence's Gate is a barbican and is widely regarded as one of the finest of its kind in Europe. 
+	It consists of two lofty circular towers, connected together by a wall, in which there is an archway. 
+	One of the gates many features is a slot underneath the arch from which a portcullis could be raised and lowered. 
 	</p>
 	
 	<br>
 	
 	<p>
-	Visitors can appreciate the spectacular dimensions of the medieval walls south of the gate at 
-	Featherbed Lane. 
+	South of the gate at Featherbed Lane visitors can appreciate the spectacular dimensions of the Medieval walls complete with buttress & embrasure. 
+	The Gate was ideally situated not only to be a fort but also a watchtower with clear views in all directions. 
 	</p>
 	
 	<br>
@@ -118,8 +113,16 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	<div id="map-canvas"></div>
 	
 	</div>
+		  
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
 </div>
 
+</div>
+	<div data-role="footer">
+</div>
 
 </body>
 </html>

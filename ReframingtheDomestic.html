@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.715611,-6.347887)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.715611,-6.347887),
+      map: map,
+      title: 'Highlanes Gallery'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Re-Framing the Domestic in Irish Art</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+
+
+
+	
+
+	<p> <h3> Exhibition: Re-Framing the Domestic in Irish Art </h3> </p>
+	
+	<p> <h2> <img src="ArtsImages/ArtsImages_Page_04_Image_0001.jpg"/> </h2> </p>
+	
+	<p>
+There are many kinds of spaces, both
+physical and metaphysical, that artists play
+with in their work, and many spaces that we,
+as humans inhabit. However, perhaps the
+most familiar space, the one that has been
+the stimulus for much artistic enquiry, be it
+visual or otherwise, has been the domestic,
+or home space, as that is where our earliest
+and most formative experiences are shaped.
+	</p>
+	
+	<p>
+This exhibition takes as its root the
+domestic in all its simple complexities and
+contradictions, to ask what facts and fictions the
+domestic suggests to the artist and viewer today.
+Beginning with works that allude to the domestic
+within the Drogheda Municipal Art Collection,
+these have acted as pinpoints in which to thread
+contemporary works to create new ways of
+looking and experiencing the domestic in art and
+life.
+	</p>
+	
+	<p>
+In bringing together three different voices: Aoife
+Ruane, the director of the gallery; Amanda
+Coogan an artist and Jane Humphries an art
+historian/writer, their individual concerns
+have been creatively challenged to
+renegotiate the preconceived ideas that
+the domestic presents as a contained, safe,
+familiar concept. Literally, from discussions
+around a domestic kitchen table, these three
+voices have shared their ideas, knowledge
+and experiences.
+	</p>
+	
+	<br>
+	
+	<p> Tuesday 30 April - Monday 5 May </p>
+	
+	<p> Venue: Highlanes Gallery, Laurence Street </p>
+	
+	<p> Time: 10:30am - 5:00pm daily except Sun 4 May</p>
+	<p> Fri 2 May 7:30 pm late opening </p>
+	<p> Closed Sun 4 May for tech set-up </p>
+	
+	<p> Tickets: Free, Voluntary donations to Gallery welcomed</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

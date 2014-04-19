@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.715611,-6.347887)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.715611,-6.347887),
+      map: map,
+      title: 'Droichead Arts Centre'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">A Taste of Drogheda</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> A Taste of Drogheda </h3> </p>
+	
+	<p> <h2> <img src="ArtsImages/ArtsImages_Page_18_Image_0003.jpg"/> </h2> </p>
+	
+	<p>
+
+This culinary tour of Drogheda led by chef, lecturer and author Dermot Seberry begins with a short
+bus journey to Ireland's No1 Tea Shop & Bakery The Brown Hound, then on to award-winning
+local food producers In Season Farm to taste the true flavour of GM-free micro vegetables. Your
+palate will be cleansed with a taste of the famous Dan Kelly's Cider and apple juice from Boyne
+Grove orchard. On to the highest point in Drogheda to take in the view of the town in all its glory
+and savour a taste of the Irish sea at Tower Wine Bar & Grill. A short downhill stroll Boyneside to
+Cairnes Gastro-pub for a savoury sensation and a gargle, if you wish, before the journey's end with
+a cultural sweet treat at Relish Cafe and Foodhall, Highlanes Gallery.
+	</p>
+	<br>				
+	
+	<p> Friday 2 May </p>
+	
+	<p> Venue: Meet at Highlanes Gallery, Laurence Street </p>
+		
+	<p>Time: 2:45pm</p>
+		
+	<p> Tickets: 30 incl Bus & Food,  Max 25 people</p>
+	
+	<p> 
+	<a href="http://droghedaartsfestival.ticketsolve.com/shows/873513115/events?show_id=873513115"> <img src="icons/BookNow2.png" /> 
+	</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>
