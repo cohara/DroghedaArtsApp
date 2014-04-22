@@ -6,6 +6,6 @@
     <access origin="*"/>
     <preference name="fullscreen" value="false"/>
     <preference name="webviewbounce" value="false"/>
-    <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarOverlaysWebView" value="false"/>
+    <preference name="StatusBarBackgroundColor" value="#000000"/>
 </widget>

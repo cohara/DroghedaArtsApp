@@ -15,7 +15,7 @@
 
 
 
-        <script src="js/script.js"></script> <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script> 
+        <script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     </head>
 
     <body>
@@ -109,7 +109,7 @@
 
                 }
 
-                $(document).on("pageshow", function(event) { initialize(); });
+                $(document).on("pageinit", function(event) { initialize(); });
 
             </script>
 
