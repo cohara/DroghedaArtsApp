@@ -46,3 +46,8 @@ max-width:100%;
 width:100%;
 height:250px;
 }
+
+.ui-header.ui-bar-a a {
+	top: auto;
+	bottom: 5px;
+}
