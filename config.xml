@@ -46,5 +46,7 @@
     <icon src="Resources/icon/ios/icon-60-2x.png" gap:platform="ios" width="120" height="120" />
     <icon src="Resources/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
     <icon src="Resources/icon/ios/icon-72-2x.png" gap:platform="ios" width="144" height="144" />
+    <preference name="target-device" value="handset" />
+
 
 </widget>
