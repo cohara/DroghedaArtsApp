@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Drogheda Arts Festival App</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+        <link rel="stylesheet"  href="css/design.css">
+
+        <script src="js/jquery.js"></script>
+
+        <script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+
+
+        <script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    </head>
+
+    <body>
+
+        <div data-role="page">
+
+            <!-- Header end -->
+
+            <div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+                <div class="bannerbox" style="background-color:#3f8de0; height:109px">
+                    <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+                </div>
+
+                <h1 class="ui-title">St Peter's Roman Catholic Church</h1>
+
+                <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+
+                <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a> 
+
+            </div>
+
+            <div role="main" class="ui-content">
+
+
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="churches.html">Back</a></li>
+
+                </ul>
+
+
+
+
+
+
+                <img src="Photo04.jpg"/> 
+
+
+                <h1> St Peter's Roman Catholic Church </h1> 
+
+
+                <br>
+
+                <p>
+                    Situated in West Street in the centre of the town, St Peter's is a splendid edifice in the modern Gothic style. 
+                    Being built at the top of a double flight of wide steps an excellent view can be obtained of the imposing façade and spire. 
+                    The site previously housed a church built in 1791 and parts of that structure were incorporated into the present building, 
+                    constructed using local limestone in 1884. The church houses fine sculptures, a spectacular marble High Altar and more than 40 stained glass windows. 
+                    The holy water font in the porch is a finely carved medieval baptismal font. However, the church is most famous for its' shrine to 
+                    St. Oliver Plunkett whose preserved head is the centerpiece of the shrine.
+                </p>
+
+                <br>
+
+                <p>
+                    St. Oliver Plunkett, was born at Loughcrew near Oldcastle, Co Meath and trained for the priesthood abroad before being ordained in 1654 
+                    and becoming Archbishop of Armagh in 1669. He spent a lot of time in Drogheda and is credited with bringing the Jesuits to town 
+                    and opening a number of schools. With the introduction of the Penal Laws, Catholics were not allowed practice their religion openly 
+                    but Plunkett managed to defy them for a period before going into hiding, traveling only in disguise. 
+                    He was arrested in Dublin in 1679 on a trumoped up charge of treason. False witnesses testified against him but even a Protestant jury 
+                    in Ireland would not convict him. He was transferred to Newgate prison in London, tried for treason, convicted and sentenced to death. 
+                    On 11th July 1681 he was taken to Tyburn (now Marble Arch) and hanged, drawn and quartered. His head was rescued from his funeral pyre 
+                    and today is the centerpiece of the shrine here in St Peters. Oliver Plunkett was beatified in 1920 and canonised in 1975. 
+                    In 1979 Pope John Paul II visited Drogheda and prayed before his relic.
+                </p>
+
+                <br>
+
+                <div id="map-canvas"></div>
+
+            </div>
+
+            <div data-role="panel" id="left-panel">
+                <div class="panelhtml"></div>
+            </div><!-- /panel -->
+
+            <script>
+                
+                function initialize() {
+                    var mapOptions = {
+                        zoom: 16,
+                        center: new google.maps.LatLng(53.7151287, -6.3524941)
+                    };
+                    map = new google.maps.Map(document.getElementById('map-canvas'),
+                            mapOptions);
+
+                    var marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(53.7151287, -6.3524941),
+                        map: map,
+                        title: 'St Peters Roman Catholic Church'
+                    });
+
+                }
+
+                $(document).on("pageinit", function(event) { initialize(); });
+
+            </script>
+
+        </div>
+
+
+        <div data-role="footer">
+        </div>
+
+    </body>
+</html>

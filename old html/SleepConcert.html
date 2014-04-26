@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.715611,-6.347887)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.715611,-6.347887),
+      map: map,
+      title: 'Highlanes Gallery'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">The Sleep Concert</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> The Sleep Concert by Steven Stapleton </h3> </p>
+	
+	<p> <h2> <img src="ArtsImages/ArtsImages_Page_07_Image_0001.jpg"/> </h2> </p>
+	
+	<p>
+
+Nexus Arts is incredibly excited to host the
+Irish premiere of the enigmatic maestro Steven
+Stapleton's "The Sleep Concert". Stapleton will
+perform his dark ambient music live throughout
+the night manipulating and re-animating his own
+Nurse with Wound records to colour and shape
+your dreams in an "avant DJ somniloquy". This will
+be accompanied by large video projections that
+will enhance the experience. 
+	</p>
+	<br>	
+	<p>
+The audience will be asked to sleep over for the duration of the concert.
+This collective sleepover will take place in
+an exclusive and stunning secret location in
+Drogheda's rural heartland. Participants will receive
+a single airbed, a blanket, breakfast plus travel to
+and from the event. This truly unique experience is
+limited to fifty people.
+Steven's only request for his performance is that he
+would greatly appreciate it "if the audience could
+snore in tune".
+	</p>
+	<br>	
+	<p>
+This event will also be broadcast live on
+"Radioactive International" an Irish based internet
+radio station www.radioactiveinternational.org
+	</p>
+	<br>
+			
+	
+	<p> Friday 2 May </p>
+	
+	<p> Venue: Meet at Highlanes Gallery, Laurence Street </p>
+	<p> Sleepover at a Secret Location </p>
+	
+	<p>Times: 10:00pm Fri 2 May overnight - 9:30am Sat 3 May</p>
+		
+	<p> Tickets: 35 in advance, Max 50 people</p>
+	
+	<p> 
+	<a href="http://droghedaartsfestival.ticketsolve.com/shows/873511396/events?show_id=873511396"> <img src="icons/BookNow2.png" /> 
+	</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

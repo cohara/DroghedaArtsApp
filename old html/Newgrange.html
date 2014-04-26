@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.715329,-6.352456)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.715329,-6.352456),
+      map: map,
+      title: 'St Peters Plaza, West St.'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Art & Archaeology, Newgrange</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> Art & Archaeology, Newgrange </h3> </p>
+	
+	<p> <h2> <img src="ArtsImages/ArtsImages_Page_18_Image_0001.jpg"/> </h2> </p>
+	
+	<p>
+
+This early morning tour is led by Professor
+Muiris O Suilleabhain, Associate Professor
+of Archaeology and former Head of the
+School of Archaeology, UCD, and brings you
+just 8km inland from Drogheda to Bru Na
+Boinne, meaning the palace or the mansion
+of the Boyne, and the name given to one of
+the world's most important archaeological
+landscapes, dominated by the spectacular
+prehistoric passage tombs of Newgrange,
+Knowth and Dowth. 
+	</p>
+	<br>	
+	<p>
+Focussing on Newgrange, O Suilleabhain throws a spotlight on one of the
+most important features of the monuments, the art, and its technique, interpretation and significance.
+	</p>
+	<br>	
+	
+	
+	<p> Sunday 4 May </p>
+	
+	<p> Venue: Meet, St Peter's Plaza, West St. </p>
+	<p> Travel by bus to Newgrange </p>
+	
+	<p>Times: 8:30am Sun 4 May, return approx 3 hours</p>
+		
+	<p> Tickets: 15 in advance, Max 20 people</p>
+	
+	<p> 
+	<a href="http://droghedaartsfestival.ticketsolve.com/shows/873513127/events?show_id=873513127"> <img src="icons/BookNow2.png" /> 
+	</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

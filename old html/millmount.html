@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+
+	    
+		<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.7117733,-6.3502812)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.7117733,-6.3502812),
+      map: map,
+      title: 'Millmount Tower & Museum'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+	
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Millmount Tower & Museum</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+
+
+
+
+<ul data-role="listview" data-inset="true">
+<li><a href="attractions.html">Back</a></li>
+
+</ul>
+
+
+
+
+	
+
+	<p> <h2> <img src="Photo01.JPG" width="100%" /> </h2> </p>
+	
+	<br>
+	
+	<p>
+	
+	<h1> The Millmount Fort and Martello Tower </h1>
+	
+	</p>
+	
+	<br>
+	
+	<p>
+	Drogheda's most striking feature, situated high above the town, the origins of the Millmount Fort 
+	are shrouded in legend. Some believe that the mound may have been the burial place of Amergin, 
+	a Celtic poet, but the Fort may equally have been a large passage grave like Newgrange. 
+	</p>
+	
+	<p>
+	Millmount was fortified as a motte by the Normans in the twelfth century and a castle was later built on the summit. 
+	Cromwell met with his strongest opposition here during the siege of 1649, and the town's Governor, Arthur Aston, 
+	was killed here during the fighting. Cromwell's subsequent massacre of the garrison and townsfolk is still recalled today.
+	</p>
+	
+	<p>
+	The old fortifications were demolished in 1808 to be replaced with the present Martello-type tower. 
+	In the course of the Civil War of 1922, the fort was shelled from the town by Free State forces and seriously damaged. 
+	It has now been restored and in recent years 2 magnificent cannon guns have been installed overlooking the town. 
+	They are fired on festive occasions. As well as the museum a craft gallery is now housed here.
+	</p>
+	
+	<br>
+	
+	<h1>  The Millmount Museum </h1>
+	
+	<br>
+	
+	<p>
+	Founded in 1974 by the Old Drogheda Society, Millmount museum hosts a range of exhibits including Guild and Trade banners 
+	stretching back two centuries; an industrial exhibition; a geological collection; a recreated 19th century kitchen; 
+	an archeological display, covering much of the Continental influence on Drogheda over past centuries; 
+	a demonstration of Drogheda's early telephone system; a rowing club exhibition; and the Military Room, 
+	which boasts a large collection of guns including the 'Fenian rifles' found hidden in the attic of a Franciscan Friary in Drogheda.
+	</p>
+	
+	<br>
+	
+	 <div id="map-canvas"></div>
+	 
+	</div>
+		  
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

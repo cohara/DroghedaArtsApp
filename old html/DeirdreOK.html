@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 16,
+    center: new google.maps.LatLng(53.727693,-6.295166)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.727693,-6.295166),
+      map: map,
+      title: 'Beaulieu House & Garden'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Deirdre O' Kane Public Interview</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+         
+
+<ul data-role="listview" data-inset="true">
+<li><a href="events.html">Back</a></li>
+
+</ul>
+
+	
+
+	<p> <h3> Deirdre O' Kane Public Interview </h3> </p>
+	
+	<p> <h2> <img src="ArtsImages/ArtsImages_Page_12_Image_0001.jpg"/> </h2> </p>
+	
+	<p>
+The Public Interview makes its
+debut at Drogheda Arts Festival
+this year. We're proud to start
+what we hope will be an annual
+element of the programme with
+one of the most accomplished
+and versatile actors of her
+generation - Deirdre O'Kane.
+Deirdre O'Kane has many film,
+stage and television credits to
+her name, the most recent being
+Sky's acclaimed (and award winning)
+comedy series, Moone
+Boy. Deirdre's latest film role is
+the award-winning Noble, which
+will be released in August.
+	</p>
+	<br>	
+	<p>
+Deirdre will be interviewed by
+Irish Times Arts writer, Tony
+Clayton-Lea.
+	</p>
+	<br>	
+
+			
+	
+	<p> Saturday 3 May </p>
+	
+	<p> Venue: Beaulieu House, Great Hall </p>
+		
+	<p>Times: 3:00pm Sat 3 May</p>
+		
+	<p> Tickets: 5 in advance, 7 on day</p>
+	
+	<p> 
+	<a href="http://droghedaartsfestival.ticketsolve.com/shows/873511677/events?show_id=873511677"> <img src="icons/BookNow2.png" /> 
+	</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	  
+	  <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

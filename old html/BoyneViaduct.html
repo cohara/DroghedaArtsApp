@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 17,
+    center: new google.maps.LatLng(53.7165817,-6.3374496)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.7165817,-6.3374496),
+      map: map,
+      title: 'Boyne Viaduct'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Boyne Viaduct</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+
+
+
+
+<ul data-role="listview" data-inset="true">
+<li><a href="attractions.html">Back</a></li>
+
+</ul>
+
+
+
+
+	
+
+	<p> <h2> <img src="Photo10.jpg" width="364.8px" height="273.6px" /> </h2> </p>
+	
+	<br>
+	
+	<p>
+	
+	<h1> Boyne Viaduct </h1>
+	
+	</p>
+	
+	<br>
+	
+	<p>
+	The Viaduct crossing the river Boyne was built in 1855. The first trains came to Drogheda in 1844. 
+	Passengers to Belfast were taken by horsedrawn vehicles across the Boyne to a station at Newfoundwell 
+	on the north side to be entrained to continue their journey north. At the time of construction it was the 
+	largest span bridge of its kind in the world. It consists of 12 masonry arches on the Dublin side, 3 
+	wrought iron girder spans over the river Boyne and3 masonry arches on the north side.
+	</p>
+	
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>

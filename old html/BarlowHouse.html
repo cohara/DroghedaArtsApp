@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>Drogheda Arts Festival App</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.4.0.min.css">
+
+<link rel="stylesheet"  href="css/design.css">
+
+<script src="js/jquery.js"></script>
+
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>
+	
+	
+    <script>
+
+function initialize() {
+  var mapOptions = {
+    zoom: 17,
+    center: new google.maps.LatLng(53.7160794,-6.3566513)
+  };
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+	  
+	    var marker = new google.maps.Marker({
+      position:  new google.maps.LatLng(53.7160794,-6.3566513),
+      map: map,
+      title: 'Barlow House'
+  });
+
+}
+
+$(document).on("pageinit", function(event) { initialize(); });
+
+    </script>
+
+<script src="js/script.js"></script> <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+
+<body>
+
+<div data-role="page">
+
+<!-- Header end -->
+	
+	<div  data-id="dojoheader" data-role="header" data-theme="b" class="ui-header ui-bar-a" style="background-color:#3300CC" data-position="fixed">
+	<div class="bannerbox" style="background-color:#3f8de0; height:109px">
+            <img id="logo" style="float:right;height:109px" src="DroghedaArtsLogo.png">
+         </div>
+		 
+         <h1 class="ui-title">Barlow House</h1>
+		
+		 <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+		 
+		<a data-icon="home" data-iconpos="notext" data-direction="reverse" href="index.html">Home</a> 
+		 
+      </div>
+	
+	<div role="main" class="ui-content">
+	
+
+
+
+
+<ul data-role="listview" data-inset="true">
+<li><a href="attractions.html">Back</a></li>
+
+</ul>
+
+
+
+
+
+	<p> <h2> <img src="Photo09.jpg" width="222.4px" height="272.2px" /> </h2> </p>
+	
+	<br>
+	
+	<p>
+	
+	<h1> Barlow House </h1>
+	
+	</p>
+	
+	<br>
+	
+	<p>
+	Barlow House on Narrow West Street is a magnificent Georgian building and a prominent land-mark in Drogheda, dating back to 1734. 
+	It has a fine pedimented Gibbsian doorcase with the central window above decorated with a segmental pediment. 
+	The building has been attributed to both Richard Cassels and Francis Bindon.
+	</p>
+	
+	<p>
+	In recent times Barlow House was the local garda station but is now one of two centres of the Droichead Arts Centre - 
+	the other being on Stockwell Street beside the library where the contemporary gallery, bar/cáfe and theatre are located. 
+	Today, Barlow House is home to two theatre companies : Upstate Theatre Project &Calipo Theatre and Picture Company and 
+	Verba Editing & Development Perspectives NGO. At the back of the premises there are two artist studios, a print studio and a band room. 
+	Inside the rooms are bustling daily with childrens music classes, arts classes and drama classes. At night there are many other activities 
+	including rehearsals, writers meetings, life drawing sessions, photography classes, music classes and community meetings. 
+	</p>
+	
+	<br>
+	
+	<div id="map-canvas"></div>
+	
+	</div>
+	
+	   <div data-role="panel" id="left-panel">
+        <div class="panelhtml"></div>
+    </div><!-- /panel -->
+	
+</div>
+
+
+</div>
+	<div data-role="footer">
+</div>
+
+</body>
+</html>
